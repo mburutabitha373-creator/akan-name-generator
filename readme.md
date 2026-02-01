@@ -39,4 +39,6 @@ The main purpose of this website is to:
 photography website assignment
 
 ##License
+
 This project is created for educational purposes only.
+.
