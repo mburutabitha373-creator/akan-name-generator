@@ -1,4 +1,4 @@
-# Akan Name Generator
+## AKAN NAME PROJECT
 
 ## Project Overview
 The Akan Name Generator is a simple web application that generates an Akan name
