@@ -55,6 +55,6 @@ function getAkanName(d, gender) {
 const dayName = getDayName(d);
 const akanName = getAkanName(d, gender);
 
-    document.getElementById("result").textContent =
+   document.getElementById("result").textContent = "";
         `You were born on a ${dayName}. Your Akan name is ${akanName}.`;
 });
