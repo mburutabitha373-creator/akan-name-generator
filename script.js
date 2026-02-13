@@ -40,12 +40,20 @@ document.getElementById("akanForm").addEventListener("submit", function (e) {
         DD
     ) % 7;
 
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+   function getDayName(d) {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return days[d];
+}
 
-    const akanName = gender === "male" ? maleNames[d] : femaleNames[d];
-    const dayName = daysOfWeek[d];
+function getAkanName(d, gender) {
+    const male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    const female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    return gender === "male" ? male[d] : female[d];
+}
+
+/
+const dayName = getDayName(d);
+const akanName = getAkanName(d, gender);
 
     document.getElementById("result").textContent =
         `You were born on a ${dayName}. Your Akan name is ${akanName}.`;
