@@ -1,9 +1,9 @@
 document.getElementById("akanForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const day = parseInt(document.getElementById("day").value);
-    const month = parseInt(document.getElementById("month").value);
-    const year = document.getElementById("year").value;
+    const yearInput = document.getElementById("year").value;
+    const monthInput = parseInt(document.getElementById("month").value);
+    const dayInput = parseInt(document.getElementById("day").value);
     const genderInput = document.querySelector('input[name="gender"]:checked');
 
     if (!day || day < 1 || day > 31) {
