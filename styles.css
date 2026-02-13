@@ -1,25 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    background color: white;
+    background-color: whitesmoke;
     padding: 20px;
-    height: 90vh;
 }
 
+h1, h2 {
+    text-align: center;
+    color: black;
+}
 
-
-.container {
+form {
     background-color: white;
     width: 300px;
-    text-align: center;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 5px;
 }
 
-input {
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
     width: 100%;
     padding: 6px;
-    margin : 5px 0;
+    margin-bottom: 15px;
     box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
 }
 
 button {
@@ -31,6 +43,9 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: gray;
+}
 
 
 #result {
