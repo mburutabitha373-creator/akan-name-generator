@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
 
-        <div class="header">
+<div class="container">
+
+    <div class="header">
         <h1>Akan Name Generator</h1>
-        <p>Find your Akan name based on the day you were born and your gender. </p>
-        <div class="Form-secttion">
-            
+        <p>Find your Akan name based on the day you were born and your gender.</p>
+    </div>
+
+    <div class="form-section">
         <form id="akanForm">
+
             <label>Day:</label>
             <input type="number" id="day" placeholder="Day (1-31)">
 
             <label>Month:</label>
-            <input type="number" id="month" placeholder="Month(1-12)">
+            <input type="number" id="month" placeholder="Month (1-12)">
 
             <label>Year:</label>
             <input type="number" id="year" placeholder="Year">
 
             <div class="gender">
                 <label>
-            <input type="radio" name="gender" value="male"> Male
-            </label>
-            <label >
-            <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+            </div>
 
             <button type="submit">Get Akan Name</button>
-        </form>
 
-        <div id="result"></div>
+        </form>
     </div>
 
-    <script src="script.js"></script>
-    
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
